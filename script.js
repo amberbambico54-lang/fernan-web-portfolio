@@ -229,4 +229,48 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Progressive Image Loading
+  function loadImage(img) {
+    return new Promise((resolve, reject) => {
+      const imageLoader = new Image();
+      imageLoader.onload = () => resolve(imageLoader);
+      imageLoader.onerror = reject;
+      imageLoader.src = img.src;
+    });
+  }
+
+  function handleImageLoad(img) {
+    img.classList.add('img-loading');
+    
+    loadImage(img)
+      .then(() => {
+        img.classList.remove('img-loading');
+        img.classList.add('img-loaded');
+      })
+      .catch(() => {
+        img.classList.remove('img-loading');
+        img.classList.add('img-loaded');
+      });
+  }
+
+  // Initialize progressive loading for all images
+  const images = document.querySelectorAll('.gallery-image, img[src*="learning projects"], img[src*="profpic"], img[src*="accesspoint"]');
+  
+  const imageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        handleImageLoad(img);
+        imageObserver.unobserve(img);
+      }
+    });
+  }, {
+    rootMargin: '50px'
+  });
+
+  images.forEach(img => {
+    img.classList.add('img-loading');
+    imageObserver.observe(img);
+  });
 });
