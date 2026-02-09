@@ -8,9 +8,23 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Directory Listing",
+    title: "Accesspoint AU",
+    image: "/img/accesspoint.png",
+    tech: ["WordPress", " Javascript"],
+    link: "https://accesspointau.com",
+  },
+  {
+    id: 3,
+    title: "WorldWise",
+    image: "/img/worldwise.png",
+    tech: ["React", "Context API", "React Router"],
+    link: "https://my-worldwiseapp.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "eCommerce",
     image: "/images/directory.png",
-    tech: ["WordPress"],
+    tech: ["React", "Axios"],
     link: "https://accesspointau.com",
   },
 ];

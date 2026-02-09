@@ -1,23 +1,61 @@
+import { Link } from "react-router-dom";
+import { projects } from "../../data/projectsData";
+
 function Projects() {
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6 hover:-translate-y-1 transition">
-      <div className="flex items-center gap-2 mb-4">
+      <div className="flex items-center gap-2 mb-4 justify-between">
         <h2 className="font-bold text-2xl text-gray-900">
           Projects | Case Study
         </h2>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-gray-100 rounded-lg p-4">
-          <img className="h-30 w-80 bg-gray-200 rounded-lg mb-3 " />
-          <h3 className="font-semibold text-lg">Project 1</h3>
-          <p className="text-gray-600">Description</p>
-          <p className="mb-4">techstack</p>
-          <button className="border border-gray-400 px-3 py-1 rounded-lg">
-            View Case Study
-          </button>
-        </div>
+        <span>
+          <Link
+            to="/projects"
+            className="relative flex items-center text-sm font-semibold text-blue-500 hover:text-blue-700 transition delay-150 duration-300
 
-        <div className="bg-gray-100 rounded-lg p-4">Thumbnail 2</div>
+        after:content-[''] after:absolute after:left-0 after:-bottom-1
+        after:h-[2px] after:w-0 after:bg-blue-700
+        after:transition-all after:duration-300
+        hover:after:w-full"
+          >
+            View All &#8250;
+          </Link>
+        </span>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {projects.slice(0, 4).map((project) => (
+          <div
+            key={project.id}
+            className="bg-gray-100 rounded-lg p-4 hover:shadow-lg transition"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="h-50 w-full sm:h-40 md:h-45 object-cover bg-gray-200 rounded-lg mb-3 "
+            />
+            <h3 className="font-semibold text-lg">{project.title}</h3>
+            <p className="text-gray-600 mb-2">Description</p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.tech.map((tech, index) => (
+                <span
+                  key={index}
+                  className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gray-400 px-3 py-1 rounded-lg hover:bg-gray-200 transition"
+            >
+              View Live
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );
