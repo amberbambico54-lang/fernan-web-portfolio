@@ -11,7 +11,7 @@ function Certification() {
       <div className=" p-1 rounded-lg ">
         <ul>
           {data.map((cert) => (
-            <li className="p-3 mb-3 bg-gray-200 rounded-lg">
+            <li className="px-3 py-4 mb-3 bg-gray-100 rounded-lg">
               <h1 className="text-md font-semibold">{cert.title}</h1>
               <p className="text-sm">
                 {cert.issuer} &bull; {cert.year}
