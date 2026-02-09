@@ -27,33 +27,39 @@ function Projects() {
         {projects.slice(0, 4).map((project) => (
           <div
             key={project.id}
-            className="bg-gray-100 rounded-lg p-4 hover:shadow-lg transition"
+            className="bg-gray-100 rounded-lg hover:shadow-lg transition overflow-hidden"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="h-50 w-full sm:h-40 md:h-45 object-cover bg-gray-200 rounded-lg mb-3 "
+              className="w-full h-40 md:h-48 object-cover"
             />
-            <h3 className="font-semibold text-lg">{project.title}</h3>
-            <p className="text-gray-600 mb-2">Description</p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.tech.map((tech, index) => (
-                <span
-                  key={index}
-                  className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded"
-                >
-                  {tech}
-                </span>
-              ))}
+
+            {/* Content wrapper with padding */}
+            <div className="p-4">
+              <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
+              <p className="text-gray-600 mb-4">Description</p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tech.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-gray-400 px-3 py-1 rounded-lg hover:bg-gray-200 transition"
+              >
+                View Live
+              </a>
             </div>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-gray-400 px-3 py-1 rounded-lg hover:bg-gray-200 transition"
-            >
-              View Live
-            </a>
           </div>
         ))}
       </div>

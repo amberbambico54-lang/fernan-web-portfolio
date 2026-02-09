@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Certification from "./Certification";
 import TechStack from "./TechStack";
 import Gallery from "./Gallery";
+import OutOfScreen from "./OutOfScreen";
 
 function Main() {
   return (
@@ -21,6 +22,7 @@ function Main() {
           <Education />
           <Experience />
           <Certification />
+          <OutOfScreen />
         </div>
         <div className="col-span-full">
           <Gallery />

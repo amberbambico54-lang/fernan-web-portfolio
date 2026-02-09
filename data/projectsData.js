@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Pizza App",
-    image: "/images/pizza.png",
+    image: "/img/pizza.png",
     tech: ["React", "Redux", "Tailwind"],
     link: "https://myfastpizzareact.netlify.app/",
   },
@@ -10,7 +10,7 @@ export const projects = [
     id: 2,
     title: "Accesspoint AU",
     image: "/img/accesspoint.png",
-    tech: ["WordPress", " Javascript"],
+    tech: ["WordPress", " Javascript", "Elementor"],
     link: "https://accesspointau.com",
   },
   {

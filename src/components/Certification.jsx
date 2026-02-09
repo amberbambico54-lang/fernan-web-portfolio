@@ -1,3 +1,4 @@
+import { HiOutlineBookOpen } from "react-icons/hi2";
 import { certifications } from "../../data/certificateData";
 
 const data = certifications;
@@ -6,6 +7,7 @@ function Certification() {
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6 hover:-translate-y-1 transition">
       <div className="flex items-center gap-2 mb-4">
+        <HiOutlineBookOpen size={25} />
         <h2 className="font-bold text-2xl text-gray-900">Certification</h2>
       </div>
       <div className=" p-1 rounded-lg ">
