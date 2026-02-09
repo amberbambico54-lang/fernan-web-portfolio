@@ -1,13 +1,12 @@
-function Projects() {
+function Certification() {
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6 hover:-translate-y-1 transition">
       <div className="flex items-center gap-2 mb-4">
-        <h2 className="font-bold text-2xl text-gray-900">
-          Projects | Case Study
-        </h2>
+        <h2 className="font-bold text-2xl text-gray-900">Certification</h2>
       </div>
+      <div></div>
     </div>
   );
 }
 
-export default Projects;
+export default Certification;
