@@ -7,9 +7,8 @@ function Education() {
         <HiOutlineAcademicCap size={25} />
         <h2 className="font-bold text-2xl text-gray-900">Education</h2>
       </div>
-      <div className="flex gap-2 items-end">
+      <div className=" ">
         <h3 className="font-semibold">BS Information Technology</h3>
-        <span className="text-sm text-gray-600">Major in Network Security</span>
       </div>
       <p>University of the Cordilleras</p>
       <span className="text-sm text-gray-600">2011 - 2016</span>
