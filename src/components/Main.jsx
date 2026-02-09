@@ -7,6 +7,7 @@ import Certification from "./Certification";
 import TechStack from "./TechStack";
 import Gallery from "./Gallery";
 import OutOfScreen from "./OutOfScreen";
+import WorkTogether from "./WorkTogether";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
           <About />
           <TechStack />
           <Projects />
+          <WorkTogether />
         </div>
         <div className="space-y-6">
           <Education />
