@@ -12,7 +12,7 @@ function Certification() {
       </div>
       <div className=" p-1 rounded-lg ">
         <ul>
-          {data.map((cert) => (
+          {data.slice(0, 5).map((cert) => (
             <li className="px-3 py-4 mb-3 bg-gray-100 rounded-lg">
               <h1 className="text-md font-semibold">{cert.title}</h1>
               <p className="text-sm">
