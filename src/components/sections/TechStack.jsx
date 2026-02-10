@@ -1,7 +1,7 @@
 import { HiOutlineCog6Tooth } from "react-icons/hi2";
 import { techStack } from "../../data/techStackData";
 
-import CategoryItem from "./CategoryItem";
+import CategoryItem from "../ui/CategoryItem";
 
 const data = techStack;
 console.log(data);

@@ -1,6 +1,6 @@
 import { HiOutlineBriefcase } from "react-icons/hi2";
 import { experience } from "../../data/experienceData";
-import ExperienceItem from "./ExperienceItem";
+import ExperienceItem from "../ui/ExperienceItem";
 
 const data = experience;
 
