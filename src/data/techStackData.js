@@ -12,8 +12,8 @@ export const techStack = [
     ],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Python", "PHP", "Laravel", "PostgreSQL", "MongoDB"],
+    category: "Backend (Familiar)",
+    items: ["Supabase", "Node.js", "ExpressJs", "PostgreSQL", "MongoDB"],
   },
   {
     category: "Graphic Design",

@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import GraphicDesign from "../pages/GraphicDesign";
+import Automation from "../pages/Automation";
+import WebDevelopment from "../pages/WebDevelopment";
 
 export default function ProjectTabs() {
   const [active, setActive] = useState("all");
@@ -38,8 +41,8 @@ export default function ProjectTabs() {
           </button>
         </div>
 
-        <Link 
-          to="/" 
+        <Link
+          to="/"
           className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 font-medium transition"
         >
           ← Back to Home
@@ -48,9 +51,9 @@ export default function ProjectTabs() {
 
       {/* Content */}
       <div className="text-center p-6">
-        {active === "all" && <p>Web Development Projects</p>}
-        {active === "featured" && <p>Graphic Design Projects</p>}
-        {active === "archived" && <p>N8n Automation Projects</p>}
+        {active === "all" && <WebDevelopment />}
+        {active === "featured" && <GraphicDesign />}
+        {active === "archived" && <Automation />}
       </div>
     </div>
   );

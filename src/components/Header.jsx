@@ -43,14 +43,21 @@ export function Header() {
             </h2>
           </div>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm text-gray-700 mt-2 mb-4 font-medium">
-            <button className="px-4 sm:px-5 py-2.5 border-gray-500 dark:border-gray-200 bg-black rounded-lg text-white text-sm transition shadow-sm cursor-pointer flex items-center gap-2 justify-center hover:-translate-y-1 duration-300">
+            <a
+              href="https://calendly.com/amberbambico54/30min"
+              target="_blank"
+              className="px-4 sm:px-5 py-2.5 border-gray-500 dark:border-gray-200 bg-black rounded-lg text-white text-sm transition shadow-sm cursor-pointer flex items-center gap-2 justify-center hover:-translate-y-1 duration-300"
+            >
               <HiMiniCalendarDays />
               Schedule a Call
-            </button>
-            <button className="bg-white text-black border-gray-200 border px-4 sm:px-5 py-2.5 rounded-lg flex items-center justify-center gap-2 hover:-translate-y-1 duration-300">
+            </a>
+            <a
+              href="mailto:amberbambico.54@gmail.com"
+              className="bg-white text-black border-gray-200 border px-4 sm:px-5 py-2.5 rounded-lg flex items-center justify-center gap-2 hover:-translate-y-1 duration-300"
+            >
               <HiEnvelope />
               Send Mail
-            </button>
+            </a>
             <button className="bg-white text-black border-gray-200 border px-4 sm:px-5 py-2.5 rounded-lg flex items-center justify-center gap-2 hover:-translate-y-1 duration-300">
               <HiMiniUsers /> Join my Dgroup
             </button>
