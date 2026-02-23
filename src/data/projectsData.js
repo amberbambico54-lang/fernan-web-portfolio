@@ -7,6 +7,7 @@ export const projects = [
     image: "/img/pizza.png",
     tech: ["React", "Redux", "Tailwind"],
     link: "https://myfastpizzareact.netlify.app/",
+    status: false,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const projects = [
     image: "/img/accesspoint.png",
     tech: ["WordPress", "Javascript", "Elementor"],
     link: "https://accesspointau.com",
+    status: false,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const projects = [
     image: "/img/worldwise.png",
     tech: ["React", "Context API", "React Router"],
     link: "https://my-worldwiseapp.netlify.app/",
+    status: false,
   },
   {
     id: 4,
@@ -34,14 +37,26 @@ export const projects = [
     image: "/images/directory.png",
     tech: ["React", "Axios"],
     link: "",
+    status: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "eCommerce",
     description:
       "An online shopping platform with product browsing and checkout functionality.",
     image: "/images/directory.png",
     tech: ["React", "Axios"],
     link: "",
+    status: true,
+  },
+  {
+    id: 6,
+    title: "eCommerce",
+    description:
+      "An online shopping platform with product browsing and checkout functionality.",
+    image: "/images/directory.png",
+    tech: ["React", "Axios"],
+    link: "",
+    status: true,
   },
 ];

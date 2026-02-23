@@ -1,15 +1,7 @@
 export const techStack = [
   {
     category: "Frontend",
-    items: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Wordpress",
-    ],
+    items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Wordpress"],
   },
   {
     category: "Backend (Familiar)",
