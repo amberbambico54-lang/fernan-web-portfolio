@@ -1,4 +1,9 @@
-import { HiMiniCalendarDays, HiEnvelope, HiMiniUsers } from "react-icons/hi2";
+import {
+  HiMiniCalendarDays,
+  HiEnvelope,
+  HiMiniUsers,
+  HiMiniArrowDownTray,
+} from "react-icons/hi2";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 function WorkTogether() {
@@ -35,12 +40,12 @@ function WorkTogether() {
               <BsLinkedin className="text-lg text-gray-700 dark:text-gray-300" />
             </a>
             <a
-              href="/cv.pdf"
+              href="https://drive.google.com/file/d/1YvO3sQeyZtbIZ2bemcqz7gQzrLs7ou2_/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md hover:border-black dark:hover:border-gray-400 hover:-translate-y-0.5 transition duration-200 shadow-sm"
             >
-              <BsGithub className="text-lg text-gray-700 dark:text-gray-300" />
+              <HiMiniArrowDownTray className="text-lg text-gray-700 dark:text-gray-300" />
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 Download CV
               </span>
