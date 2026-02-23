@@ -4,9 +4,9 @@ import ProjectsItem from "./ProjectsItem";
 
 function Projects() {
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-6 hover:-translate-y-1 transition">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 hover:-translate-y-1 transition">
       <div className="flex items-center gap-2 mb-4 justify-between">
-        <h2 className="font-bold text-2xl text-gray-900">
+        <h2 className="font-bold text-2xl text-gray-900 dark:text-white">
           Projects | Case Study
         </h2>
         <span>

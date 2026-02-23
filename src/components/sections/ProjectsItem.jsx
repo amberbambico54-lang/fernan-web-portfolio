@@ -2,7 +2,7 @@ function ProjectsItem({ project }) {
   return (
     <div
       key={project.id}
-      className="bg-gray-100 rounded-lg hover:shadow-lg transition overflow-hidden"
+      className="bg-gray-100 dark:bg-gray-700 rounded-lg hover:shadow-lg transition overflow-hidden"
     >
       <img
         src={project.image}
@@ -12,14 +12,14 @@ function ProjectsItem({ project }) {
 
       {/* Content wrapper with padding */}
       <div className="p-4">
-        <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
-        <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
+        <h3 className="font-semibold text-lg mb-2 dark:text-white">{project.title}</h3>
+        <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">{project.description}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tech.map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded"
+              className="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 text-xs px-2 py-1 rounded"
             >
               {tech}
             </span>
@@ -30,7 +30,7 @@ function ProjectsItem({ project }) {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block border border-gray-400 px-3 py-1 rounded-lg hover:bg-gray-200 transition"
+          className="inline-block border border-gray-400 dark:border-gray-500 dark:text-gray-200 px-3 py-1 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition"
         >
           View Live
         </a>

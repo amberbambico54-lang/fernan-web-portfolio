@@ -6,10 +6,10 @@ const data = experience;
 
 function Experience() {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 hover:-translate-y-1 transition">
       <div className="flex items-center gap-2 mb-4">
-        <HiOutlineBriefcase size={25} />
-        <h2 className="font-bold text-2xl text-gray-900">Experience</h2>
+        <HiOutlineBriefcase size={25} className="dark:text-gray-300" />
+        <h2 className="font-bold text-2xl text-gray-900 dark:text-white">Experience</h2>
       </div>
       <div className="space-y-4">
         {/* 1st Experience */}

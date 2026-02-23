@@ -6,7 +6,7 @@ function GraphicDesign() {
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {graphicDesignImages.map((image, index) => (
         <div
-          key={index}
+          key={image}
           className="aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
         >
           <BlurImage

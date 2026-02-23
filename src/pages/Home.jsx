@@ -18,7 +18,6 @@ function Home() {
           <About />
           <TechStack />
           <Projects />
-          <WorkTogether />
         </div>
         <div className="space-y-6">
           <Education />
@@ -26,8 +25,9 @@ function Home() {
           <Certification />
           <OutOfScreen />
         </div>
-        <div className="col-span-full">
+        <div className="col-span-full space-y-6">
           <Gallery />
+          <WorkTogether />
         </div>
       </main>
     </>
