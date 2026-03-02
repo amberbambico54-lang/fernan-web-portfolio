@@ -60,7 +60,7 @@ function WorkTogether() {
           Get in Touch
         </h3>
         <a
-          href="https://calendly.com/amberbambico54/30min"
+          href="https://zcal.co/feryanlee"
           target="_blank"
           className="px-5 py-4 bg-white dark:bg-gray-700 text-black dark:text-white rounded-lg flex items-center justify-left gap-2 hover:-translate-y-1 transition duration-300 shadow-sm"
         >

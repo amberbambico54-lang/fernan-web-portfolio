@@ -68,7 +68,7 @@ export function Header() {
           </div>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm text-gray-700 dark:text-gray-300 mt-2 mb-4 font-medium">
             <a
-              href="https://calendly.com/amberbambico54/30min"
+              href="https://zcal.co/feryanlee"
               target="_blank"
               className="px-4 sm:px-5 py-2.5 border-gray-500 dark:border-gray-600 bg-black dark:bg-white dark:text-black rounded-lg text-white text-sm transition shadow-sm cursor-pointer flex items-center gap-2 justify-center hover:-translate-y-1 duration-300"
             >
